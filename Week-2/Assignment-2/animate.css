@@ -60,3 +60,70 @@
 .box>div:nth-of-type(4) {
     background-color: khaki;
 }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+@keyframes rotateTopRight {
+    50% {
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        transform-origin: top right;
+        animation-timing-function: ease-in-out
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        transform-origin: top right;
+        animation-timing-function: ease-in-out
+    }
+}
+
+@keyframes rotateTopLeft {
+    50% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        transform-origin: top left;
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        transform-origin: top left;
+        animation-timing-function: ease-in-out
+    }
+}
+
+@keyframes rotateBottomRight {
+    50% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        transform-origin: bottom right;
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        transform-origin: bottom right;
+        animation-timing-function: ease-in-out
+    }
+}
+
+@keyframes rotateBottomLeft {
+    50% {
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        transform-origin: bottom left;
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        transform-origin: bottom right;
+        animation-timing-function: ease-in-out
+    }
+}
