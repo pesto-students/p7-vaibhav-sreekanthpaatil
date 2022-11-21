@@ -52,3 +52,11 @@
     -moz-animation: rotateBottomLeft 4s ease-in-out !important;
 
 }
+
+.box>div:nth-of-type(3) {
+    background-color: rebeccapurple;
+}
+
+.box>div:nth-of-type(4) {
+    background-color: khaki;
+}
