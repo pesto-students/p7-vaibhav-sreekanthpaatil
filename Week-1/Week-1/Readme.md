@@ -2,13 +2,13 @@
 
 ## What is the main functionality of the browser?
 
-#### A Web browser loads files from remote server and displays them to a user. It also allows user interaction.
+A Web browser loads files from remote server and displays them to a user. It also allows user interaction.
 
-#### It uses a URI (Uniform Resource Identifier) and sends requests for data(HTML/CSS/JS/XML/JSON and others) to other nodes(server/another computer) in its network and serve received data to the requested user. A browser can request files served by a server in local network (intranet) or the internet.
+It uses a URI (Uniform Resource Identifier) and sends requests for data(HTML/CSS/JS/XML/JSON and others) to other nodes(server/another computer) in its network and serve received data to the requested user. A browser can request files served by a server in local network (intranet) or the internet.
 
 ## High Level Components of a browser?
 
-#### The important high level components of a browser are as follows:
+The important high level components of a browser are as follows:
 
 ![This is an image](https://raw.githubusercontent.com/pesto-students/sai-karthik-j-sairamin/master/Week-1/how-web-works/images/components.jpg)
 
@@ -24,21 +24,21 @@
 
 ![This is an image](https://raw.githubusercontent.com/pesto-students/sai-karthik-j-sairamin/master/Week-1/how-web-works/images/webkitflow-renderingengine.png)
 
-#### Rendering engine interacts with network layer to get documents(HTML/CSS etc) in chunks of 8kbs. Thus rendering engine parses HTML and CSS files. Each html element is convered to DOM node. A Content tree/DOM tree containing DOM nodes is thus constructed.
+Rendering engine interacts with network layer to get documents(HTML/CSS etc) in chunks of 8kbs. Thus rendering engine parses HTML and CSS files. Each html element is convered to DOM node. A Content tree/DOM tree containing DOM nodes is thus constructed.
 
-#### Simultaneously all style data is parsed, and a "CSSOM Tree" is created.
+Simultaneously all style data is parsed, and a "CSSOM Tree" is created.
 
-#### DOM Tree and CSSOM Tree are combined to create "Render Tree" Render tree is made of rectangles with visual attributes and contains the right order in which these are to be displayed.
+DOM Tree and CSSOM Tree are combined to create "Render Tree" Render tree is made of rectangles with visual attributes and contains the right order in which these are to be displayed.
 
-#### Then layout/reflow process starts where each node is given exact coordinates of its location.
+Then layout/reflow process starts where each node is given exact coordinates of its location.
 
-#### Finally painting process starts. Here render tree will be traversed and each DOM node will be painted using the UI Backend Layer.
+Finally painting process starts. Here render tree will be traversed and each DOM node will be painted using the UI Backend Layer.
 
-#### This is how rendering engine works.
+This is how rendering engine works.
 
-#### Browsers can run multiple instances of rendering engines when new tabs are opened.
+Browsers can run multiple instances of rendering engines when new tabs are opened.
 
-#### As an overview, Rendering Engine does the following:
+As an overview, Rendering Engine does the following:
 
 #### 1. Processes HTML markup and builds DOM tree.
 
@@ -54,7 +54,7 @@
 
 ![This is an image](https://raw.githubusercontent.com/pesto-students/sai-karthik-j-sairamin/master/Week-1/how-web-works/images/domtree.jpg)
 
-#### HTML parsing involves tokenization for DOM tree construction. A HTML parser (a) parses every character in the HTML file (b) create tokens for each tag, attributes and values. (c) create the nodes of DOM Tree from these tokens. (d) constructs the DOM Tree.
+HTML parsing involves tokenization for DOM tree construction. A HTML parser (a) parses every character in the HTML file (b) create tokens for each tag, attributes and values. (c) create the nodes of DOM Tree from these tokens. (d) constructs the DOM Tree.
 
 ![This is an image](https://raw.githubusercontent.com/pesto-students/sai-karthik-j-sairamin/master/Week-1/how-web-works/images/cssomtree.jpg)
 
