@@ -40,4 +40,12 @@
 
 #### As an overview, Rendering Engine does the following:
 
-#### 1.Processes HTML markup and builds DOM tree. 2.Processes CSS markup and builds CSSOM tree. 3.Combines the DOM and CSSOM into a Render tree. 4.Run layout on the Render tree to compute geometry of each node. 5.Paint the individual nodes to the screen.
+#### 1.Processes HTML markup and builds DOM tree.
+
+#### 2.Processes CSS markup and builds CSSOM tree.
+
+#### 3.Combines the DOM and CSSOM into a Render tree.
+
+#### 4.Run layout on the Render tree to compute geometry of each node.
+
+#### 5.Paint the individual nodes to the screen.
