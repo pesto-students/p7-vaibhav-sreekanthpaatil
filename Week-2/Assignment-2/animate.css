@@ -1,0 +1,14 @@
+.container {
+    height: 200px;
+    width: 200px;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    height: 100px;
+    width: 100px;
+}
