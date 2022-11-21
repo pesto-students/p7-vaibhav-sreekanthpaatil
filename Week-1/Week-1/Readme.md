@@ -75,3 +75,13 @@ This entire process is called the critical rendering path (CRP)
 DOM Tree (in brief):
 
 The DOM tree represents content of the document. The tree reflects the relationships and hierarchies between different tags. Tags nested within other tags are child nodes. The greater the number of DOM nodes, the longer it takes to construct the DOM tree.
+
+## Script Processors & Order of Script Processing
+
+1. When the parser finds non-blocking resources, such as an image, the browser will request those resources and continue parsing
+2. Parsing can continue when a CSS file is encountered, but 'script' tags—particularly those without an async or defer attribute... block rendering, and pause the parsing of HTML. Though the browser's preload scanner hastens this process, excessive scripts can still be a significant bottleneck.
+3. Javascript execution will be halted until CSSOM is ready. All scripts are parsed & processed sequentially by default.
+4. Parsing of a (HTML/CSS)document halts until the encountered script has been executed.
+5. Parsing also halts until an external script is fetched.
+6. If 'defer' attribute is used on a script, then the parser will not halt (document parsing) until this deferred script is loaded completely. This deferred script is parsed after parsing the document.
+7. If a script is has "async" attribute, it will be parsed and executed by a different thread.
