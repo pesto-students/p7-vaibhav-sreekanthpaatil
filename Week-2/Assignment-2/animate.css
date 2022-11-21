@@ -21,3 +21,7 @@
 .box>div:nth-of-type(2) {
     background-color: gray;
 }
+.content {
+    z-index: -1;
+    position: absolute;
+}
