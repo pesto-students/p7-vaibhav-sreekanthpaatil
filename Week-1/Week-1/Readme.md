@@ -19,3 +19,25 @@
 5. UI Backend: Used to draw basic widgets like combo boxes and windows that are platform independent.
 6. Javascript Interpreter: It parses JS code and executes it.
 7. Data Storage: This is where data is stored locally for persistence (Eg. cookies) Browsers support storage mechanisms such as localStorage, IndexedDB, WebSQL and FileSystem.
+
+## Rendering Engine and its Use
+
+![This is an image](https://raw.githubusercontent.com/pesto-students/sai-karthik-j-sairamin/master/Week-1/how-web-works/images/webkitflow-renderingengine.png)
+
+#### Rendering engine interacts with network layer to get documents(HTML/CSS etc) in chunks of 8kbs. Thus rendering engine parses HTML and CSS files. Each html element is convered to DOM node. A Content tree/DOM tree containing DOM nodes is thus constructed.
+
+#### Simultaneously all style data is parsed, and a "CSSOM Tree" is created.
+
+#### DOM Tree and CSSOM Tree are combined to create "Render Tree" Render tree is made of rectangles with visual attributes and contains the right order in which these are to be displayed.
+
+#### Then layout/reflow process starts where each node is given exact coordinates of its location.
+
+#### Finally painting process starts. Here render tree will be traversed and each DOM node will be painted using the UI Backend Layer.
+
+#### This is how rendering engine works.
+
+#### Browsers can run multiple instances of rendering engines when new tabs are opened.
+
+#### As an overview, Rendering Engine does the following:
+
+#### 1.Processes HTML markup and builds DOM tree. 2.Processes CSS markup and builds CSSOM tree. 3.Combines the DOM and CSSOM into a Render tree. 4.Run layout on the Render tree to compute geometry of each node. 5.Paint the individual nodes to the screen.
