@@ -15,3 +15,9 @@ function memoize(fn){
 function multiply(a, b) {
     return a * b;
 }
+
+function time(fn) {
+    console.time();
+    fn();
+    console.timeEnd();
+}
