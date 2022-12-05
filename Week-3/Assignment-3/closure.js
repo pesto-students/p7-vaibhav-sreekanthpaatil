@@ -1,4 +1,4 @@
-unction createIncrement(){
+function createIncrement(){
     let count = 0;
     function increment(){
         count++;
@@ -14,3 +14,4 @@ increment();
 increment();   
 increment();    
 log();          
+
