@@ -1,3 +1,6 @@
 function memoize(fn){
-    console.log ("ryyr")
+  const cache = new Map();
+  return function (...args) {
+    const keys = args.toString();
+  }
 }
