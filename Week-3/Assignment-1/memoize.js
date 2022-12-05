@@ -2,5 +2,12 @@ function memoize(fn){
   const cache = new Map();
   return function (...args) {
     const keys = args.toString();
+
+    if (cache.has(keys)){
+        return cache.get(keys);
+    } else {
+        cache.set(keys, fn(...args));
+        return cache.get(keys);
+    }
   }
 }
