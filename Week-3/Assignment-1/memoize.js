@@ -11,3 +11,7 @@ function memoize(fn){
     }
   }
 }
+
+function multiply(a, b) {
+    return a * b;
+}
