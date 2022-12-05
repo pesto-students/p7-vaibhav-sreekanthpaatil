@@ -46,6 +46,6 @@ function billionaireContainer(){
     billionaire.hello.apply(billionaire, arguments);
 }
 
-billionaireContainer("world","mars"); //output: Jeff bozz says hello mars
+ billionaireContainer("world","mars"); //output: Jeff bozz says hello mars
 // notes: arguments[0]="world", arguments[1]="mars"
 //apply is similar to call except that it takes an array-like object instead of listing the arguments out one at a time
