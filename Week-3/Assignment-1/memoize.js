@@ -21,3 +21,8 @@ function time(fn) {
     fn();
     console.timeEnd();
 }
+
+const multiplyMemo = memoize(multiply);
+time(() => multiplyMemo(35464774484,5758549945));
+time(() => multiplyMemo(33647472,689797));
+time(() => multiplyMemo(1243544,6987844));
