@@ -3,3 +3,7 @@ const STATE = {
     FULFILLED: 'FULFILLED',
     REJECTED: 'REJECTED',
 }
+
+function isThenable(val) {
+    return val instanceof MyPromise;
+}
